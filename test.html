@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+    <script type="text/babel">
+
+        /*********  JSX component *********/
+        
+        const TodoItem = () => {
+
+            return (
+                <p className="todo">TESTING SOMETHING!!!</p>
+            )
+        }
+
+        
+        /*********  Below is for testing *********/
+        function App() {
+            const todo = new TodoItem();
+            ReactDOM.render(todo, document.getElementById('root')
+        );
+        }
+
+        App();
+
+    </script>
+
+</head>
+
+<body>
+    <!-- Leave this as is -->
+    <div id="root"></div>
+</body>
+
+
+</html>
